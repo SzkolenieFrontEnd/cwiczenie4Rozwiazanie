@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+a {
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width:100%;
+    background-color: #fff;
+    padding: 0px 20px;
+    height:70px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px 1px rgb(213, 213, 213);
+    z-index:10
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+}
+.main-menu ul li {
+    margin-left:15px;
+}
+
+.banner {
+    position: relative;
+    background-image: url("images/zooBanner.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.banner-text {
+    display: flex;
+    position: absolute;
+    top:30%;
+    left:5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 3, 3, 0.842);
+    color: #fff;
+    width:45%;
+    height: 300px;
+    min-width:320px;
+}
+.banner-text button {
+    width:140px;
+    height:25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s box-shadow;
+}
+.banner-text button:hover {
+    box-shadow: 0px 3px 10px 1px #fff;
+}
+
+.section-animals {
+    text-align: center;
+    max-width:1024px;
+    margin: 40px auto;
+}
+
+.animals-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animals-gallery img {
+
+    width:300px;
+    margin:20px;
+}
+
+footer {
+    background-color: #303030;
+    padding:25px;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    .banner-text {
+        position: relative;
+        left:0;
+        margin: 0 auto;
+    }
+}
